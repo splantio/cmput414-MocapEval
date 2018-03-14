@@ -1,8 +1,8 @@
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
+CMPUT414-Mocap/[Ll]ibrary/
+CMPUT414-Mocap/[Tt]emp/
+CMPUT414-Mocap/[Oo]bj/
+CMPUT414-Mocap/[Bb]uild/
+CMPUT414-Mocap/[Bb]uilds/
 /Assets/AssetStoreTools*
 
 # Visual Studio 2015 cache directory
