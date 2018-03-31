@@ -17,7 +17,8 @@ public class FileNames
 		string str = "";
 		foreach(FileInfo file in Files )
 		{
-			fileString.Add(file.Name);
+            string fileName = file.Name.Remove(file.Name.Length - 4);
+            fileString.Add(fileName);
 
 		}
 	}

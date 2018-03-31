@@ -18,7 +18,7 @@ public class ButtonScript : MonoBehaviour {
 	void TaskOnClick()
 	{
 		Debug.Log("You have clicked the button!");
-		//pA.setAnimation (fbxFile);
+		pA.setAnimation(fbxFile);
 
 	}
 

@@ -17,6 +17,7 @@ public class ButtonCreation : MonoBehaviour {
             bttn.transform.SetParent(contentPanel);
 			ButtonScript bttnScript = bttn.GetComponent<ButtonScript> ();
 			bttnScript.setFbxFile (fN.fileString [i]);
+            bttnScript.setPlayerAnimator(pA);
 			//bttnScript.setPlayerAnimator (pA);
 		}
 	}
