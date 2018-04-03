@@ -33,6 +33,4 @@ public class PlayerAnimator : MonoBehaviour {
         gameObject.transform.position = orgPos;
         animatorController.SetStateEffectiveMotion(defaultState, Resources.Load<AnimationClip>(newAnimation));
 	}
-
-
 }
