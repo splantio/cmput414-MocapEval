@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEditor.Animations;
 
-public class PlayerAnimator : MonoBehaviour {
+public class PlayerAnimator2 : MonoBehaviour {
 
     public AnimatorController animatorController;
     private AnimatorState defaultState;

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
-public class ButtonScript : MonoBehaviour {
+public class ButtonScript2 : MonoBehaviour {
 	
 	public Button btn;
 	public string fbxFile;
@@ -13,7 +13,7 @@ public class ButtonScript : MonoBehaviour {
     void Start () {
 		Button btn = gameObject.GetComponent<Button>();
 		btn.onClick.AddListener(TaskOnClick);
-        player = GameObject.FindGameObjectWithTag("human");
+        player = GameObject.FindGameObjectWithTag("human2");
         pA = player.GetComponent<PlayerAnimator>();
         
 	}

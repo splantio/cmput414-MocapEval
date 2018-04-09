@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
-public class PlayScript : MonoBehaviour {
+public class PlayScript2 : MonoBehaviour {
 
 	public Button btn;
     public PlayerAnimator pA;
@@ -13,9 +13,10 @@ public class PlayScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        player = GameObject.FindGameObjectWithTag("human");
+        player = GameObject.FindGameObjectWithTag("human2");
         pA = player.GetComponent<PlayerAnimator>();
-        btn.onClick.AddListener(TaskOnClick);
+        //yerAnimator)) as PlayerAnimator;
+		btn.onClick.AddListener(TaskOnClick);
 		pause = false;
 	}
 
@@ -26,11 +27,9 @@ public class PlayScript : MonoBehaviour {
 		pause = !pause;
 		if (pause) {
 			btn.GetComponentInChildren<Text> ().text = "Play";
-			//Time.timeScale = 0;
             pA.pauseAnimation();
 		} else {
 			btn.GetComponentInChildren<Text> ().text = "Pause";
-			//Time.timeScale = 1;
             pA.playAnimation();
 		}
 
