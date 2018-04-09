@@ -9,29 +9,32 @@ public class PlayScript2 : MonoBehaviour {
     public PlayerAnimator pA;
     public GameObject player;
     public string fbxFile;
-	public bool pause;
+    private bool paused;
 
 	// Use this for initialization
 	void Start () {
         player = GameObject.FindGameObjectWithTag("human2");
         pA = player.GetComponent<PlayerAnimator>();
-        //yerAnimator)) as PlayerAnimator;
 		btn.onClick.AddListener(TaskOnClick);
-		pause = false;
-	}
+        this.paused = false;
+    }
 
-	// Update is called once per frame
-	void TaskOnClick()
-	{
-		//test
-		pause = !pause;
-		if (pause) {
-			btn.GetComponentInChildren<Text> ().text = "Play";
+
+    // Update is called once per frame
+    void TaskOnClick()
+    {
+        Debug.Log("Clicked play button");
+        //btn.GetComponentInChildren<Text> ().text = "Play";
+        if (!paused)
+        {
             pA.pauseAnimation();
-		} else {
-			btn.GetComponentInChildren<Text> ().text = "Pause";
+        }
+        else {
+            //btn.GetComponentInChildren<Text> ().text = "Pause";
             pA.playAnimation();
-		}
+        }
 
-	}
+        paused = !paused;
+
+    }
 }

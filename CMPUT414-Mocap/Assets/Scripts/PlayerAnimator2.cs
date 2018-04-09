@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEditor.Animations;
+using UnityEngine.UI;
 
 public class PlayerAnimator2 : MonoBehaviour {
 
@@ -31,6 +32,7 @@ public class PlayerAnimator2 : MonoBehaviour {
 	public void setAnimation(string newAnimation){
 		print (newAnimation);
         gameObject.transform.position = orgPos;
+        GameObject.Find("C1Filename").GetComponent<Text>().text = newAnimation;
         animatorController.SetStateEffectiveMotion(defaultState, Resources.Load<AnimationClip>(newAnimation));
 	}
 

@@ -23,8 +23,10 @@ public class ButtonScript : MonoBehaviour {
 	{
 		Debug.Log("You have clicked the button!");
 		pA.setAnimation(fbxFile);
+        player.transform.position = new Vector3(0, 0, 0);
 
-	}
+
+    }
 
 	public void setFbxFile(string fileName){
 		this.fbxFile = fileName;
