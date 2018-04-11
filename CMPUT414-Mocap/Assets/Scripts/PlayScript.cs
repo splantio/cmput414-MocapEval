@@ -1,26 +1,26 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
+// Attach to the individual play buttons
 public class PlayScript : MonoBehaviour {
-
-	public Button btn;
-    public PlayerAnimator pA;
+    
+    private PlayerAnimator pA;
     public GameObject player;
-    public string fbxFile;
     private bool paused;
 
-	// Use this for initialization
-	void Start () {
-        player = GameObject.FindGameObjectWithTag("human");
+    // Use this for initialization
+    void Start () {
+        //player = GameObject.FindGameObjectWithTag("human");
         pA = player.GetComponent<PlayerAnimator>();
-        btn.onClick.AddListener(TaskOnClick);
+        Button btn = gameObject.GetComponent<Button>().GetComponent<Button>();
+        btn.onClick.AddListener(OnClick);
+        print(btn);
         this.paused = false;
 	}
     
-	// Update is called once per frame
-	void TaskOnClick()
+	public void OnClick()
 	{
         Debug.Log("Clicked play button");
         //btn.GetComponentInChildren<Text> ().text = "Play";

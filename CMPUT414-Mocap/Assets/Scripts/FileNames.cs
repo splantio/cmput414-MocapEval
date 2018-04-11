@@ -1,9 +1,5 @@
-﻿using System;
 using System.IO;
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-
 
 public class FileNames
 {
@@ -12,9 +8,8 @@ public class FileNames
 	{
 		string path = Directory.GetCurrentDirectory();
 		path = path + @"/Assets/Resources";
-		DirectoryInfo d = new DirectoryInfo(@path);//Assuming Test is your Folder
-		FileInfo[] Files = d.GetFiles("*.fbx"); //Getting Text files
-		string str = "";
+		DirectoryInfo d = new DirectoryInfo(@path);
+		FileInfo[] Files = d.GetFiles("*.fbx");
 		foreach(FileInfo file in Files )
 		{
             string fileName = file.Name.Remove(file.Name.Length - 4);
