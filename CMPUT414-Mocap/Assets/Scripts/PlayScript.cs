@@ -5,24 +5,23 @@ using UnityEngine;
 
 // Attach to the individual play buttons
 public class PlayScript : MonoBehaviour {
-    
+
+    public string modelTag;
     private PlayerAnimator pA;
-    public GameObject player;
+    private GameObject player;
     private bool paused;
 
     // Use this for initialization
     void Start () {
-        //player = GameObject.FindGameObjectWithTag("human");
+        player = GameObject.FindGameObjectWithTag(modelTag);
         pA = player.GetComponent<PlayerAnimator>();
         Button btn = gameObject.GetComponent<Button>().GetComponent<Button>();
         btn.onClick.AddListener(OnClick);
-        print(btn);
         this.paused = false;
 	}
     
 	public void OnClick()
 	{
-        Debug.Log("Clicked play button");
         //btn.GetComponentInChildren<Text> ().text = "Play";
         if (!paused)
         {

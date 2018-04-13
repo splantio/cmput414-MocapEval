@@ -3,7 +3,7 @@ guid: 791e3c5173a95ee4dac4dd50904cf289
 timeCreated: 1520968118
 licenseType: Free
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 21
   fileIDToRecycleName:
     100000: ball_l
     100002: ball_r
@@ -140,42 +140,10 @@ ModelImporter:
     13700006: low-polyMesh
     13700008: shoes05Mesh
     13700010: short01Mesh
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: eyebrow008
-    second: {fileID: 2100000, guid: d081e890da0c6b24f90ae9ae93ce84f8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: female_casualsuit01
-    second: {fileID: 2100000, guid: 36934a6a291079441b8db1dd87616da5, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: human
-    second: {fileID: 2100000, guid: ab2c89c0293cb1c4f869731fff19ca94, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: low-poly
-    second: {fileID: 2100000, guid: 562326d844d3b564083444e2e0109b8f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: shoes05
-    second: {fileID: 2100000, guid: 094255278922e254f976c4c014d3ef20, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: short01
-    second: {fileID: 2100000, guid: 66de3d67430c43b45aefde028d40f0c1, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -188,7 +156,6 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
     animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
